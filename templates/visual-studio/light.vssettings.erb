@@ -8,7 +8,7 @@
 			<PropertyValue name="Version">2</PropertyValue>
 			<FontsAndColors Version="2.0">
 				<Categories>
-					<Category GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}" FontIsDefault="Yes">
+					<Category CharSet="1" FontIsDefault="No" FontName="Consolas" FontSize="12" GUID="{A27B4E24-A735-4D1D-B8E7-9716E1E3D8E0}">
 						<Items>
 							<Item Name="Plain Text" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x00<%= @base["07"]["hexbgr"] %>" BoldFont="No"/>
 							<Item Name="Identifier" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
@@ -71,7 +71,7 @@
 							<Item Name="Memory Changed" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Memory Data" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Memory Unreadable" Foreground="0x00<%= @base["07"]["hexbgr"] %>" Background="0x00<%= @base["00"]["hexbgr"] %>" BoldFont="No"/>
-							<Item Name="Number" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="Number" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="Operator" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Other Error" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="outlining.square" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
@@ -90,8 +90,8 @@
 							<Item Name="ReSharper ASP.NET MVC View" Foreground="0x00<%= @base["0B"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper ASP.NET RunAt attribute" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Brace Outline" Foreground="0x00<%= @base["0D"]["hexbgr"] %>" Background="0x00<%= @base["04"]["hexbgr"] %>" BoldFont="No"/>
-							<Item Name="ReSharper Class Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Constant Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
+							<Item Name="ReSharper Class Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Constant Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="ReSharper CSS class selector" Foreground="0x00<%= @base["09"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper CSS id selector" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper CSS keyword" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
@@ -99,11 +99,11 @@
 							<Item Name="CurrentLineActiveFormat" Foreground="0x00<%= @base["06"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="CurrentLineInactiveFormat" Foreground="0x02000000" Background="0x00<%= @base["06"]["hexbgr"] %>" BoldFont="No"/>
 							<Item Name="ReSharper Dead Code" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000 %>" BoldFont="No"/>
-							<Item Name="ReSharper Delegate Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Delegate Identifier" Foreground="0x00<%= @base["0C"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="ReSharper Enum Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Event Identifier" Foreground="0x00<%= @base["09"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Extension Method Identifier" Foreground="0x00<%= @base["0C"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
-							<Item Name="ReSharper Field Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Field Identifier" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Format String Item" Foreground="0x00<%= @base["0C"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper HTML Entity" Foreground="0x00<%= @base["0D"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper HTML ID attribute" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
@@ -118,12 +118,12 @@
 							<Item Name="ReSharper Method Identifier" Foreground="0x00<%= @base["0C"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Mutable Local Variable Identifier" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="ReSharper Name or Signature Changed" Foreground="0x00<%= @base["00"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Namespace Identifier" Foreground="0x00<%= @base["09"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Namespace Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Non-Private Unused Members" Foreground="0x00<%= @base["04"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Operator Identifier" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Parameter Identifier" Foreground="0x00<%= @base["02"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Static Class Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="ReSharper Struct Identifier" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Static Class Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="ReSharper Struct Identifier" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Template Editor Template Keyword" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Todo Item" Foreground="0x00<%= @base["0F"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="ReSharper Type Parameter Identifier" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
@@ -144,7 +144,7 @@
 							<Item Name="SQL System Function" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="SQL System Table" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="Stale Code" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="String" Foreground="0x00<%= @base["0B"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="String" Foreground="0x00<%= @base["0B"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="String(C# @ Verbatim)" Foreground="0x00<%= @base["0B"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="string - verbatim" Foreground="0x00<%= @base["0B"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="SymbolDefinitionClassificationFormat" Foreground="0x00<%= @base["0D"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
@@ -172,10 +172,10 @@
 							<Item Name="User Types(Interfaces)" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="User Types(Type parameters)" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="User Types(Value types)" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-                            <Item Name="class name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-                            <Item Name="module name" Foreground="0x00<%= @base["09"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-                            <Item Name="struct name" Foreground="0x00<%= @base["09"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
-							<Item Name="delegate name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+                            <Item Name="class name" Foreground="0x00<%= @base["08"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+                            <Item Name="module name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+                            <Item Name="struct name" Foreground="0x00<%= @base["0E"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
+							<Item Name="delegate name" Foreground="0x00<%= @base["0C"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
 							<Item Name="enum name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="interface name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="No"/>
 							<Item Name="type parameter name" Foreground="0x00<%= @base["0A"]["hexbgr"] %>" Background="0x02000000" BoldFont="Yes"/>
